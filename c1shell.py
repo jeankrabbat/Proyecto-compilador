@@ -37,6 +37,7 @@ TIMES         = 9      # '*'
 NEWLINE       = 10     # end of line
 ERROR         = 11     # if not any of the above, then error
 #Los siguientes se agregan según solicitud del proyecto programado:
+# Parte 1: Análisis Léxico
 POWER         = 12 
 DIV           = 13
 IF            = 14
@@ -117,7 +118,7 @@ def main():
    outfile.close()
 
 ####################
-# tokenizer        #
+# Parte 1: tokenizer
 ####################
 def tokenizer():
    global token
@@ -223,7 +224,7 @@ def enter(s, v):
    return index
 
 ####################
-# parser functions #
+# Parte 2: Análisis Sintáctico
 ####################
 def advance():
    global token, tokenindex 
